@@ -1,4 +1,4 @@
-const GROQ_API_KEY = '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'; // Replace with your actual API key
+const GROQ_API_KEY = 'GROQ_API_KEY'; // Replace with your actual API key
 const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
 
 async function convertCode() {
@@ -32,7 +32,7 @@ async function convertCode() {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                model: "llama-3.3-70b-versatile", // Ensure this is the correct model
+                model: "llama-3.3-70b-versatile", // Add your any model
                 messages: [
                     {
                         role: "system",
